@@ -9,6 +9,7 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
+
 type NavItem = {
   name: string;
   link: string;
@@ -18,11 +19,7 @@ export const FloatingNav = ({
   navItems,
   className,
 }: {
-  navItems: {
-    name: string;
-    link: string;
-    icon?: React.ReactElement;
-  }[];
+  navItems: NavItem[];
   className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
@@ -34,7 +31,7 @@ export const FloatingNav = ({
     if (typeof current === "number") {
       const direction = current! - scrollYProgress.getPrevious()!;
 
-      if (scrollYProgress.get() < 0.05) {
+      if (scrollYProgress.get() < 0.0005) {
         setVisible(false);
       } else {
         if (direction < 0) {
@@ -45,6 +42,11 @@ export const FloatingNav = ({
       }
     }
   });
+
+  const handleDownloadResume = () => {
+    const driveLink = "https://drive.google.com/drive/folders/12rSmaxWkXSgRHUbGLUeqAioUesGejVnU";
+    window.open(driveLink, "_blank");
+  };
 
   return (
     <AnimatePresence mode="wait">
@@ -77,8 +79,8 @@ export const FloatingNav = ({
             <span className="hidden sm:block text-sm">{navItem.name}</span>
           </Link>
         ))}
-        <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-          <span>Login</span>
+        <button onClick={handleDownloadResume} className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
+          <span>Download Resume</span>
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
         </button>
       </motion.div>
