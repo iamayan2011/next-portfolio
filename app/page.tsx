@@ -3,7 +3,7 @@ import { FloatingNav } from "@/components/ui/FloatingNavBar";
 import { FaHome } from "react-icons/fa";
 //import Grid from "@/components/Grid";
 import RecentProjects from "@/components/RecentProjects";
-import { TimelineDemo } from "@/components/Experience";
+
 
 
 

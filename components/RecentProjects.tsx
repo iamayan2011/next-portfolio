@@ -1,7 +1,6 @@
 import React from 'react'
-import { projects, techIcons } from '@/data'
-import { PinContainer } from './ui/3d-pin'
-import Image from "next/image";
+import { projects} from '@/data'
+
 import Projects from './Projects';
 
 const RecentProjects = () => {

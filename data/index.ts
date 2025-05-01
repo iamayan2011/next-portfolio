@@ -171,7 +171,7 @@ export const projects = [
     des: "A NextJS personal portfolio website showcasing my skills, experience and projects.",
     img: "/portfolio.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/iamayan2011",
+    link: "https://github.com/iamayan2011/next-portfolio",
     techstack:[
       "next", "tailwind", "typescript", "acce", "framer", 
     ],
