@@ -5,8 +5,8 @@ import Projects from './Projects';
 
 const RecentProjects = () => {
   return (
-    <div id="projects" className='py-10'>
-      <h1 className='heading'>
+    <div id="projects" className='py-10 my-10'>
+      <h1 className='heading mb-20'>
         Some of my {' '}
         <span className="text-purple">recent projects.</span>
       </h1>

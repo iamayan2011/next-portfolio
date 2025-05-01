@@ -20,8 +20,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
           key={id}
           className="w-96 h-[28rem] shadow-sm rounded-2xl overflow-hidden relative group"
         >
-          {/* ────────────────────────────────── */}
-          {/* IMAGE + GRADIENT + HOVER TEXT */}
+          
           <a
             href={link}
             target="_blank"
