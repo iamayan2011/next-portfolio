@@ -136,16 +136,41 @@ export const techIcons = [
     name: "Azure",
     abv: "azure",
     icon: "/azure.svg"
-  }
+  },
+  {
+    id: 22,
+    name: "FastAPI",
+    abv: "fast",
+    icon: "/fastapi.svg"
+  },
+  {
+    id: 23,
+    name: "Python",
+    abv: "python",
+    icon: "/python.svg"
+  },
+
 ]
 
 export const projects = [
+  {
+    id: 6,
+    title: "Movie Recommender: Full Stack ML Project",
+    des: "A content based movie recommender system using TMDB dataset with FastAPI backennd & React (Vite, Typescript) frontend.",
+    img: "/movie-recommender.png",
+    
+    link: "https://github.com/iamayan2011/MovieRecommender",
+    techstack:[
+      "react", "tailwind", "typescript", "fast", "python", "daisy" 
+    ],
+    category: "Web Dev"
+  },
   {
     id: 1,
     title: "NextJS Personal Portfolio",
     des: "A NextJS personal portfolio website showcasing my skills, experience and projects.",
     img: "/portfolio.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    
     link: "https://github.com/iamayan2011/next-portfolio",
     techstack:[
       "next", "tailwind", "typescript", "acce", "framer", 
